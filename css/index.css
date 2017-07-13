@@ -1,0 +1,192 @@
+html, body {
+    position: relative;
+    background-color: black;
+    color: cornsilk;
+    z-index: 10;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron {
+    background: url("../img/banner.png") no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    border-radius: 25px;
+}
+
+.container {
+    padding: 50px 20px;
+    background-color: #0f0f0f;
+}
+
+#crystals {
+    position:absolute;
+    top:0;
+    left:0;
+    width:480px;
+    height:100%;
+    background: url("../img/crystal_01.png"), url("../img/crystal_02.png"), url("../img/crystal_03.png");
+    background-repeat: repeat-y;
+    z-index: -1;
+
+    -webkit-animation:background 1500s linear infinite;
+    animation:background 1500s linear infinite;
+}
+
+@-webkit-keyframes background
+{
+    0% { background-position:0 0; }
+    100% { background-position:0 -900%, 0 -900%, 0 -2400%; }
+}
+
+@keyframes background
+{
+    0% { background-position:0 0, 0 0, 0 0; }
+    100% { background-position:0 -900%, 0 -900%, 0 -2400%; }
+}
+
+@font-face {
+    font-family: "Jupiter";
+    src: url('../ttf/Jupiter Pro Regular.otf');
+}
+
+.jupiter {
+    font-family: Jupiter;
+}
+
+/*Bootstrap Navbar AutoGenerate*/
+.navbar-default {
+    background-color: #000000;
+    border-color: #7a7a7a;
+}
+.navbar-default .navbar-brand {
+    color: #8b8e8e;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-text {
+    color: #8b8e8e;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #8b8e8e;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #8b8e8e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-toggle {
+    border-color: #7a7a7a;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #7a7a7a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #8b8e8e;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #8b8e8e;
+}
+.navbar-default .navbar-link {
+    color: #8b8e8e;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #8b8e8e;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #7a7a7a;
+    }
+}
+/*END*/
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+/* Code for Breadcrumb */
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom:-3px;
+}
+
+.breadcrumb {
+    background: rgba(245, 245, 245, 0);
+    border: 0px solid rgba(245, 245, 245, 1);
+    border-radius: 25px;
+    display: block;
+}
+
+.btn-bread{
+    margin-top:10px;
+    font-size: 12px;
+
+    border-radius: 3px;
+}
+/*END*/
+
+
+.popover-title, .popover-content{
+    background: #0f0f0f;
+}
+
+#send{
+    color: #0f0f0f;
+}

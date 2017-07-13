@@ -1,0 +1,111 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#css-gif {
+    width: 20%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.zone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.defileParent {
+    display: block;
+    margin: 3em auto;
+    overflow: hidden;
+    position: relative;
+    table-layout: fixed;
+    width: 700px;
+}
+.defile {
+    display:block;
+    -webkit-animation:linear marqueelike 20s infinite ;
+    -moz-animation:linear marqueelike 20s infinite ;
+    -o-animation:linear marqueelike 20s infinite ;
+    -ms-animation:linear marqueelike 20s infinite ;
+    animation:linear marqueelike 20s infinite ;
+    margin-left:-100%;
+    padding:0 5px;
+    text-align:left;
+    height:25px;
+}
+
+
+.defile:after {
+    content:attr(data-text);
+    position:absolute;
+    white-space:nowrap;
+    padding-left:10px;
+}
+
+@-webkit-keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+}
+@-moz-keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+}
+@-o-keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+}
+@-ms-keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+}
+@keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+}
+
+@media only screen and (max-width: 860px) {
+    .defileParent {
+        display: block;
+        margin: 3em auto;
+        overflow: hidden;
+        position: relative;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .defile {
+        display:block;
+        -webkit-animation:linear marqueelike 5s infinite ;
+        -moz-animation:linear marqueelike 5s infinite ;
+        -o-animation:linear marqueelike 5s infinite ;
+        -ms-animation:linear marqueelike 5s infinite ;
+        animation:linear marqueelike 5s infinite ;
+        margin-left:-100%;
+        padding:0 5px;
+        text-align:left;
+        height:25px;
+    }
+}
+
+
+.carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
